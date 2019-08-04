@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="big_selector_width">240dp</dimen>
+	<dimen name="big_selector_height">42dp</dimen>
+
+	<dimen name="big_text">64dp</dimen>
+	<dimen name="title_text">40dp</dimen>
+
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/darkBlue"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/deviceTextView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="[NO DEVICE]\n[NO ADDRESS]"
+		android:textSize="@dimen/title_text"
+		android:textStyle="bold"
+		android:textColor="@color/textWhite"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<TextView
+		android:id="@+id/temperatureTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="--.- C"
+		android:textColor="@color/textWhite"
+		android:textSize="@dimen/big_text"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/relativeHumidityTextView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/deviceTextView"
+
+		/>
+
+
+	<TextView
+		android:id="@+id/relativeHumidityTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="--.-% RH"
+		android:textColor="@color/textWhite"
+		android:textSize="@dimen/big_text"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/rssiTextView"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/temperatureTextView" />
+
+
+	<TextView
+		android:id="@+id/rssiTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="rssi = ...."
+		android:textColor="@color/textWhite"
+		android:textSize="@dimen/big_text"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/relativeHumidityTextView" />
+
+
+</android.support.constraint.ConstraintLayout>
